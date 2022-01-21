@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+
+:root {
+    --accent: #34606E;
+    --accentHover: #564334;
+    --dark: #564334;
+    --dark90: rgba(86,67,52,.9);
+    --light: #F5F7F6;
+    --transition: all 0.3s case 0s;
+
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html, body {
+    height: 100%;
+    
+}
