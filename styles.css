@@ -2,9 +2,10 @@
 
 :root {
     --accent: #34606E;
-    --accentHover: #564334;
+    --accentHover: #5c8d9c;
     --dark: #564334;
-    --dark90: rgba(86,67,52,.9);
+    --dark85: rgba(86, 67, 52, 0.85);
+    --dark90: rgba(86, 67, 52, 0.9);
     --light: #F5F7F6;
     --transition: all 0.3s case 0s;
 
@@ -20,5 +21,113 @@
 
 html, body {
     height: 100%;
+    overflow: auto;
+
+}
+
+body {
+    background: url(./images/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
+}
+
+p, a, button {
+    font-family: "Lato", sans-serif;
+    color: var(--light);
+    text-decoration: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    grid-template-columns:  minmax(60px, 1fr) repeat(6, minmax(30px,150px)) minmax(60px, 1fr);
+
+}
+
+header {
+    grid-column: 2 / span 6;
+    align-items: center;
+    height: 120px;
+}
+
+icons, img {
+    height: 30px;
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 122px;
+
+}
+
+.links {
+    margin-left: auto;
+
+}
+
+.links a, .links button {
+    font-size: 1.25rem;
+    color: #34606E;
+    font-weight: 500;
+    transition: var(--transition);
+
+}
+
+.links a {
+    margin-right: 50px;
+    font-weight: 600;
+}
+
+.links a:hover {
+    color: var(--accentHover);
+
+}
+button .button__login {
+    color: white !important;
+}
+
+.button__login {
+    border: none;
+    background-color: var(--accent);
+    padding: 8px 25px;
+    transition: var(--transition);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 100;
+} 
+
+.button__login:hover {
+    background-color: var(--accentHover);
+    
+}
+
+.hero__font {
+    color: var(--accent);
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-size: 4.375rem;
+
+}
+
+.info {
+    grid-column: 2 / span 4;
+}
+
+.icons {
+    display: flex;
+    margin-top: 53px;
+    align-items: center;
+
+}
+
+.icon__info {
+    color: var(--accent);
 }
