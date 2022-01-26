@@ -151,16 +151,17 @@ button .button__login {
     grid-column: 2 / span 7;
     background-color: var(--dark85);
     align-self: end;
-    padding: 40px 0 0 60px;
+    padding: 25px 0 0 35px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 .feature {
     display: flex;
     margin: 0 60px 40px 0;
-    width: 397px;
+    width: 350px;
 }
 
 .feature img {
@@ -191,12 +192,21 @@ button .button__login {
 }
 
 .feature_cta {
-    font-size: 0.9375rem;
+    
     line-height: 1.25rem;
     padding-bottom: 10px;
-    
+    cursor: pointer;
+    transition: var(--transition);
+    padding-left: 100px;
 }
 
 .feature_cta:hover {
     color: var(--accentHover);
 }
+
+.feature__top, .feature_cta {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
