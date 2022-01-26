@@ -127,7 +127,76 @@ button .button__login {
     align-items: center;
 
 }
+.icons img {
+    height: 70px;
+}
 
 .icon__info {
+    margin: 0 80px 0 20px;
+
+}
+
+.icon__top {
+    color:var(--accent);
+    font-size: 1.25rem;
+}
+
+.icon__bottom {
+    font-size: 1.25rem;
+    font-weight: bold;
     color: var(--accent);
+}
+
+.features {
+    grid-column: 2 / span 7;
+    background-color: var(--dark85);
+    align-self: end;
+    padding: 40px 0 0 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.feature {
+    display: flex;
+    margin: 0 60px 40px 0;
+    width: 397px;
+}
+
+.feature img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.feature:nth-child(3) {
+    align-self: flex-start;
+}
+
+.feature_top {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    padding-bottom: 10px;
+   font-weight: bold;
+}
+
+.feature_bottom {
+    width: 180px;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    font-weight: 100;
+}
+
+.features_info {
+    margin-top: 10px;
+}
+
+.feature_cta {
+    font-size: 0.9375rem;
+    line-height: 1.25rem;
+    padding-bottom: 10px;
+    
+}
+
+.feature_cta:hover {
+    color: var(--accentHover);
 }
